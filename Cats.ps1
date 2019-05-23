@@ -1,0 +1,2 @@
+$PostCats = Invoke-RestMethod -uri https://api.imgur.com/3/upload -Method post -Authentication oauth -token (ConvertTo-SecureString c852a80f59e8423a5d08dc47c51a78d70acf5e2c -AsPlainText -Force) -Body "https://cdn.vox-cdn.com/thumbor/j-AiZGm4WQP1XmpeWk05_rk4HEs=/0x0:3000x2000/1200x800/filters:focal(1032x224:1512x704)/cdn.vox-cdn.com/uploads/chorus_image/image/63214701/miles_captain_marvel_cat_marvel_ringer.0.jpg"
+start $PostCats.data.link
